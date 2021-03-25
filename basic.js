@@ -34,12 +34,19 @@
 // console.log(a > b)
 // console.log(a >= b)
 
-var a = 10
-var b = 20
+// var a = 10
+// var b = 20
 
-console.log(a < b && a > 11)
-console.log(a < b || a > 11)
-console.log(!(a < b && a > 11))
+// console.log(a < b && a > 11)
+// console.log(a < b || a > 11)
+// console.log(!(a < b && a > 11))
+
+var a = 7
+var b = '7'
+
+console.log(a == b) // only check the value of variable
+console.log(a === b) // check the value as well as type of the variable
+
 
 
 
