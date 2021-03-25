@@ -24,13 +24,22 @@
 // console.log(mul)
 // console.log(div)
 
-var a = 10 
+// var a = 10 
+// var b = 20
+
+// console.log(a == b)
+// console.log(a != b)
+// console.log(a < b)
+// console.log(a <= b)
+// console.log(a > b)
+// console.log(a >= b)
+
+var a = 10
 var b = 20
 
-console.log(a == b)
-console.log(a != b)
-console.log(a < b)
-console.log(a <= b)
-console.log(a > b)
-console.log(a >= b)
+console.log(a < b && a > 11)
+console.log(a < b || a > 11)
+console.log(!(a < b && a > 11))
+
+
 
