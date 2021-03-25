@@ -41,12 +41,22 @@
 // console.log(a < b || a > 11)
 // console.log(!(a < b && a > 11))
 
-var a = 7
-var b = '7'
+// var a = 7
+// var b = '7'
 
-console.log(a == b) // only check the value of variable
-console.log(a === b) // check the value as well as type of the variable
+// console.log(a == b) // only check the value of variable
+// console.log(a === b) // check the value as well as type of the variable
 
+var nameStd = 'a'
 
+if (nameStd == 'a'){
+    console.log('your name is: ' + nameStd)
+}
+else if (nameStd == 'khan'){
+    console.log('your name is: ' + nameStd)
+}
+else{
+    console.log('no name')
+}
 
 
