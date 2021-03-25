@@ -11,16 +11,26 @@
 // var myage = 17
 // console.log(typeof(myage))
 
-var a = 10
+// var a = 10
+// var b = 20
+
+// sum = a + b
+// sub = a - b
+// mul = a * b
+// div = a / b
+
+// console.log(sum)
+// console.log(sub)
+// console.log(mul)
+// console.log(div)
+
+var a = 10 
 var b = 20
 
-sum = a + b
-sub = a - b
-mul = a * b
-div = a / b
-
-console.log(sum)
-console.log(sub)
-console.log(mul)
-console.log(div)
+console.log(a == b)
+console.log(a != b)
+console.log(a < b)
+console.log(a <= b)
+console.log(a > b)
+console.log(a >= b)
 
