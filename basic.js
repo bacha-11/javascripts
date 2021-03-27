@@ -47,16 +47,37 @@
 // console.log(a == b) // only check the value of variable
 // console.log(a === b) // check the value as well as type of the variable
 
-var nameStd = 'a'
+// var nameStd = 'a'
 
-if (nameStd == 'a'){
-    console.log('your name is: ' + nameStd)
+// if (nameStd == 'a'){
+//     console.log('your name is: ' + nameStd)
+// }
+// else if (nameStd == 'khan'){
+//     console.log('your name is: ' + nameStd)
+// }
+// else{
+//     console.log('no name')
+// }
+
+
+function test(){
+    console.log('This is a function')
 }
-else if (nameStd == 'khan'){
-    console.log('your name is: ' + nameStd)
+
+test()
+
+function alertFun(){
+    alert('This is alert function')
 }
-else{
-    console.log('no name')
+
+alertFun()
+
+
+function sumNumber(num1, num2){
+    var result = num1 + num2
+    document.getElementById('add').innerHTML = 'The answer is: ' + result
 }
 
 
+var num1 = parseInt(prompt('Enter number'))
+sumNumber(num1 , 20)
