@@ -123,15 +123,24 @@
 // }while(num <= 10)
 
 
-for(i=0; i<=10; i++){
-    console.log(i)
+// for(i=0; i<=10; i++){
+//     console.log(i)
+// }
+
+// console.log('-----------')
+
+// for(i=1; i<=10; i++){
+//     console.log('8 * ' + i + ' = ' + 8 * i)
+// }
+
+
+
+function sum(num1, num2){
+    result = num1 + num2
+    return result
 }
 
-console.log('-----------')
-
-for(i=1; i<=10; i++){
-    console.log('8 * ' + i + ' = ' + 8 * i)
-}
-
+var addNumber = sum(100, 20)
+console.log(addNumber)
 
 
