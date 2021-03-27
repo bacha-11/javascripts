@@ -83,7 +83,26 @@
 // sumNumber(num1 , 20)
 
 
-var age = 20
-var result = (age >= 18) ? 'You can vote':'You cant vote'
-console.log(result)
+// var age = 20
+// var result = (age >= 18) ? 'You can vote':'You cant vote'
+// console.log(result)
+
+var myName = ''
+
+switch(myName){
+    case 'a':
+        console.log('your name is: ' + myName)
+        break
+
+    case 'b':
+        console.log('your name is: ' + myName)
+        break
+
+    case 'c':
+        console.log('your name is: ' + myName)
+        break
+
+    default:
+        console.log('name not found')
+}
 
