@@ -107,18 +107,31 @@
 // }
 
 
-var num = 0
+// var num = 0
 
-while(num <= 10){
-    console.log(num)
-    num++
+// while(num <= 10){
+//     console.log(num)
+//     num++
+// }
+
+// console.log('-------------------')
+
+// var num = 0
+// do{
+//     console.log(num)
+//     num++
+// }while(num <= 10)
+
+
+for(i=0; i<=10; i++){
+    console.log(i)
 }
 
-console.log('-------------------')
+console.log('-----------')
 
-var num = 0
-do{
-    console.log(num)
-    num++
-}while(num <= 10)
+for(i=1; i<=10; i++){
+    console.log('8 * ' + i + ' = ' + 8 * i)
+}
+
+
 
