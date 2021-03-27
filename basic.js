@@ -60,24 +60,30 @@
 // }
 
 
-function test(){
-    console.log('This is a function')
-}
+// function test(){
+//     console.log('This is a function')
+// }
 
-test()
+// test()
 
-function alertFun(){
-    alert('This is alert function')
-}
+// function alertFun(){
+//     alert('This is alert function')
+// }
 
-alertFun()
-
-
-function sumNumber(num1, num2){
-    var result = num1 + num2
-    document.getElementById('add').innerHTML = 'The answer is: ' + result
-}
+// alertFun()
 
 
-var num1 = parseInt(prompt('Enter number'))
-sumNumber(num1 , 20)
+// function sumNumber(num1, num2){
+//     var result = num1 + num2
+//     document.getElementById('add').innerHTML = 'The answer is: ' + result
+// }
+
+
+// var num1 = parseInt(prompt('Enter number'))
+// sumNumber(num1 , 20)
+
+
+var age = 20
+var result = (age >= 18) ? 'You can vote':'You cant vote'
+console.log(result)
+
