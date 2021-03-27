@@ -87,22 +87,38 @@
 // var result = (age >= 18) ? 'You can vote':'You cant vote'
 // console.log(result)
 
-var myName = ''
+// var myName = ''
 
-switch(myName){
-    case 'a':
-        console.log('your name is: ' + myName)
-        break
+// switch(myName){
+//     case 'a':
+//         console.log('your name is: ' + myName)
+//         break
 
-    case 'b':
-        console.log('your name is: ' + myName)
-        break
+//     case 'b':
+//         console.log('your name is: ' + myName)
+//         break
 
-    case 'c':
-        console.log('your name is: ' + myName)
-        break
+//     case 'c':
+//         console.log('your name is: ' + myName)
+//         break
 
-    default:
-        console.log('name not found')
+//     default:
+//         console.log('name not found')
+// }
+
+
+var num = 0
+
+while(num <= 10){
+    console.log(num)
+    num++
 }
+
+console.log('-------------------')
+
+var num = 0
+do{
+    console.log(num)
+    num++
+}while(num <= 10)
 
