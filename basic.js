@@ -135,12 +135,21 @@
 
 
 
-function sum(num1, num2){
+// function sum(num1, num2){
+//     result = num1 + num2
+//     return result
+// }
+
+// var addNumber = sum(100, 20)
+// console.log(addNumber)
+
+
+var sum = function(num1, num2){
     result = num1 + num2
     return result
 }
 
-var addNumber = sum(100, 20)
-console.log(addNumber)
+var add = sum(10, 10)
+console.log(add)
 
 
