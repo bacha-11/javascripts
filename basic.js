@@ -161,24 +161,40 @@
 // console.log(sum)
 
 
-let fruits = ['mango', 'apple', 'banana', 'kiwi']
+// let fruits = ['mango', 'apple', 'banana', 'kiwi']
 
-for(let i=0; i<fruits.length; i++){
-    console.log(`fruit name is: ${fruits[i]}`)
-}
+// for(let i=0; i<fruits.length; i++){
+//     console.log(`fruit name is: ${fruits[i]}`)
+// }
 
-console.log('------------')
+// console.log('------------')
 
-for(let fruit in fruits){
-    console.log(fruits[fruit])
-}
+// for(let fruit in fruits){
+//     console.log(fruits[fruit])
+// }
 
-console.log('------------')
+// console.log('------------')
 
-for(let fruit of fruits){
-    console.log(fruit)
-}
+// for(let fruit of fruits){
+//     console.log(fruit)
+// }
 
+
+
+let shop = ['shoes', 'dress', 'watch']
+shop.push('cloth')
+console.log(shop)
+
+shop.unshift('bigs')
+console.log(shop)
+
+
+let countries = ['pakistan', 'usa', 'uae', 'afghan']
+countries.pop()
+console.log(countries)
+
+countries.shift()
+console.log(countries)
 
 
 
