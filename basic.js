@@ -198,27 +198,41 @@
 
 
 
-let countries = ['pakistan', 'usa', 'uae', 'afghan']
+// let countries = ['pakistan', 'usa', 'uae', 'afghan']
 
-let indexofcountry = countries.indexOf('usa')
+// let indexofcountry = countries.indexOf('usa')
 
-if(indexofcountry){
-    let count = countries.splice(indexofcountry,0,'aus') 
-    console.log(count)
-}
-console.log(countries)
+// if(indexofcountry){
+//     let count = countries.splice(indexofcountry,0,'aus') 
+//     console.log(count)
+// }
+// console.log(countries)
 
 
 
-let country = ['pakistan', 'usa', 'uae', 'afghan']
-let indexcountry = country.indexOf('usa')
+// let country = ['pakistan', 'usa', 'uae', 'afghan']
+// let indexcountry = country.indexOf('usa')
 
-if(indexcountry){
-    let count = country.splice(indexcountry,1)
-}else{
-    console.log('cant be found')
-}
-console.log(country)
+// if(indexcountry){
+//     let count = country.splice(indexcountry,1)
+// }else{
+//     console.log('cant be found')
+// }
+// console.log(country)
+
+
+
+let number = [1, 2, 3, 4]
+
+let newNumber = number.map((currval) => {
+    return currval * 2
+}).filter((currval) => {
+    return currval > 2
+}).reduce((acc, currval) => {
+    return acc += currval
+}, 7)
+
+console.log(newNumber)
 
 
 
