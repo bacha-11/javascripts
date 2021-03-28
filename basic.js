@@ -152,11 +152,48 @@
 // var add = sum(10, 10)
 // console.log(add)
 
-const add = () => {
-    let a = 10, b = 20
-    return a + b
+// const add = () => {
+//     let a = 10, b = 20
+//     return a + b
+// }
+
+// sum = add()
+// console.log(sum)
+
+
+let fruits = ['mango', 'apple', 'banana', 'kiwi']
+
+for(let i=0; i<fruits.length; i++){
+    console.log(`fruit name is: ${fruits[i]}`)
 }
 
-sum = add()
-console.log(sum)
+console.log('------------')
+
+for(let fruit in fruits){
+    console.log(fruits[fruit])
+}
+
+console.log('------------')
+
+for(let fruit of fruits){
+    console.log(fruit)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
