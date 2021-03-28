@@ -181,21 +181,44 @@
 
 
 
-let shop = ['shoes', 'dress', 'watch']
-shop.push('cloth')
-console.log(shop)
+// let shop = ['shoes', 'dress', 'watch']
+// shop.push('cloth')
+// console.log(shop)
 
-shop.unshift('bigs')
-console.log(shop)
+// shop.unshift('bigs')
+// console.log(shop)
+
+
+// let countries = ['pakistan', 'usa', 'uae', 'afghan']
+// countries.pop()
+// console.log(countries)
+
+// countries.shift()
+// console.log(countries)
+
 
 
 let countries = ['pakistan', 'usa', 'uae', 'afghan']
-countries.pop()
+
+let indexofcountry = countries.indexOf('usa')
+
+if(indexofcountry){
+    let count = countries.splice(indexofcountry,0,'aus') 
+    console.log(count)
+}
 console.log(countries)
 
-countries.shift()
-console.log(countries)
 
+
+let country = ['pakistan', 'usa', 'uae', 'afghan']
+let indexcountry = country.indexOf('usa')
+
+if(indexcountry){
+    let count = country.splice(indexcountry,1)
+}else{
+    console.log('cant be found')
+}
+console.log(country)
 
 
 
