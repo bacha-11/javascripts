@@ -144,12 +144,19 @@
 // console.log(addNumber)
 
 
-var sum = function(num1, num2){
-    result = num1 + num2
-    return result
+// var sum = function(num1, num2){
+//     result = num1 + num2
+//     return result
+// }
+
+// var add = sum(10, 10)
+// console.log(add)
+
+const add = () => {
+    let a = 10, b = 20
+    return a + b
 }
 
-var add = sum(10, 10)
-console.log(add)
-
+sum = add()
+console.log(sum)
 
