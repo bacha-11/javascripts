@@ -234,24 +234,41 @@
 // console.log(newNumber)
 
 
-let currentdate = new Date()
-console.log(currentdate)
-console.log(currentdate.toString());
-console.log(currentdate.toLocaleDateString());
-console.log(currentdate.toLocaleString())
-console.log(currentdate.toTimeString())
-console.log(currentdate.toUTCString())
-console.log(currentdate.getDate())
-console.log(currentdate.getDay())
-console.log(currentdate.getFullYear())
-console.log(currentdate.getHours())
-console.log(currentdate.getMonth())
-console.log(currentdate.getTime())
-console.log(currentdate.getTimezoneOffset())
+// let currentdate = new Date()
+// console.log(currentdate)
+// console.log(currentdate.toString());
+// console.log(currentdate.toLocaleDateString());
+// console.log(currentdate.toLocaleString())
+// console.log(currentdate.toTimeString())
+// console.log(currentdate.toUTCString())
+// console.log(currentdate.getDate())
+// console.log(currentdate.getDay())
+// console.log(currentdate.getFullYear())
+// console.log(currentdate.getHours())
+// console.log(currentdate.getMonth())
+// console.log(currentdate.getTime())
+// console.log(currentdate.getTimezoneOffset())
 
-let nowdate = Date.now()
-console.log(nowdate);
+// let nowdate = Date.now()
+// console.log(nowdate);
 
+
+function show_date(){
+    let currentdate = new Date()
+    let date = currentdate.toLocaleDateString()
+    document.getElementById('date_demo').innerHTML = date
+
+    let time = currentdate.toLocaleTimeString()
+    document.getElementById('time_demo').innerHTML = time
+}
+
+(function(){
+    setInterval(() => {
+        let currentdate = new Date()
+        let time = currentdate.toLocaleTimeString();
+        document.getElementById('runing_time').innerHTML = time;
+    }, 1000);
+})();
 
 
 
