@@ -221,18 +221,36 @@
 // console.log(country)
 
 
+// let number = [1, 2, 3, 4]
 
-let number = [1, 2, 3, 4]
+// let newNumber = number.map((currval) => {
+//     return currval * 2
+// }).filter((currval) => {
+//     return currval > 2
+// }).reduce((acc, currval) => {
+//     return acc += currval
+// }, 7)
 
-let newNumber = number.map((currval) => {
-    return currval * 2
-}).filter((currval) => {
-    return currval > 2
-}).reduce((acc, currval) => {
-    return acc += currval
-}, 7)
+// console.log(newNumber)
 
-console.log(newNumber)
+
+let currentdate = new Date()
+console.log(currentdate)
+console.log(currentdate.toString());
+console.log(currentdate.toLocaleDateString());
+console.log(currentdate.toLocaleString())
+console.log(currentdate.toTimeString())
+console.log(currentdate.toUTCString())
+console.log(currentdate.getDate())
+console.log(currentdate.getDay())
+console.log(currentdate.getFullYear())
+console.log(currentdate.getHours())
+console.log(currentdate.getMonth())
+console.log(currentdate.getTime())
+console.log(currentdate.getTimezoneOffset())
+
+let nowdate = Date.now()
+console.log(nowdate);
 
 
 
