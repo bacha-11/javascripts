@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM IN JS</title>
+</head>
+<body>
+    <p id="para1">using id to change the inner html</p>
+
+    <button onclick="changePara1()"> Click Me</button>
+
+    <script>
+        function changePara1(){
+            let data = `I'm para one`
+            document.getElementById('para1').innerHTML = data
+        }
+    </script>
+</body>
+</html>
