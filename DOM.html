@@ -7,14 +7,26 @@
     <title>DOM IN JS</title>
 </head>
 <body>
+    
     <p id="para1">using id to change the inner html</p>
+
+    
+    <div id="p">
+        <p class="para">this is me</p>
+        <p class="para">this is me</p>
+    </div>
+    
 
     <button onclick="changePara1()"> Click Me</button>
 
     <script>
         function changePara1(){
-            let data = `I'm para one`
-            document.getElementById('para1').innerHTML = data
+            //  let data = `I'm para one.`;
+            //  document.getElementById('para1').innerHTML = data;
+
+            let data = document.getElementById('p')
+            data.getElementsByClassName('para')[0].innerHTML = `I'm para one.`;
+
         }
     </script>
 </body>
