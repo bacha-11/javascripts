@@ -7,13 +7,14 @@
     <title>DOM IN JS</title>
 </head>
 <body>
-    
+
     <p id="para1">using id to change the inner html</p>
 
     
     <div id="p">
         <p class="para">this is me</p>
         <p class="para">this is me</p>
+        <h1>this is h1</h1>
     </div>
     
 
@@ -24,8 +25,13 @@
             //  let data = `I'm para one.`;
             //  document.getElementById('para1').innerHTML = data;
 
+            // let data = document.getElementById('p')
+            // data.getElementsByClassName('para')[0].innerHTML = `I'm para one.`;
+
             let data = document.getElementById('p')
-            data.getElementsByClassName('para')[0].innerHTML = `I'm para one.`;
+            data.getElementsByTagName('h1')[0].innerHTML = `I'm para one.`;
+            console.log(data);
+            
 
         }
     </script>
