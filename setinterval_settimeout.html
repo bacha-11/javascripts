@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<body>
+    <p >What your name?</p>
+    <p id="result"></p>
+    <br>
+    <button id="setTime">Click Here</button>
+    <button id="stopTime">Stop</button>
+
+    <script>
+        const myName = document.getElementById('setTime');
+        const result = document.getElementById('result');
+        let stopTime = document.getElementById('stopTime');
+
+        myName.addEventListener('click', myfunction);
+        stopTime.addEventListener('click', myfunction2)
+        let num = 0
+        let stop
+
+        function myfunction(){
+            stop = setInterval(() => {
+                result.innerHTML = num
+                
+                if(num == 5){
+                    setTimeout(() => {
+                    result.innerHTML = 'ijaz'
+                    }, 1000);
+                }else{
+                    num++
+                }
+            }, 1000);   
+        
+        }
+
+        function myfunction2(){
+            clearInterval(stop)
+            result.innerHTML = 'ijaz'
+        }
+    </script>
+
+</body>
+</html>
