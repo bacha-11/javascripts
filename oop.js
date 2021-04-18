@@ -25,3 +25,8 @@ let student = {
     
     //  console.log(student.stdName)
     student.get_data()
+
+    let {stdId, stdName, stdAge, get_data} = student
+    console.log(get_data())
+
+
