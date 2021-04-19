@@ -26,6 +26,7 @@ let student = {
     //  console.log(student.stdName)
     student.get_data()
 
+    // Object Destructuring
     let {stdId, stdName, stdAge, get_data} = student
     console.log(get_data())
 
