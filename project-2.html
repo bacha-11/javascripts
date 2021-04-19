@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <title>Project 2</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main-content{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #7768AE;
+        }
+
+        .main-content h1{
+            color: white;
+            font-size: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>I am thermometer <span id="temp" class="fa"> </span></h1>
+    </div>
+
+    <script>
+        function thermometer(){
+            let temp = document.getElementById('temp');
+            temp.innerHTML = '&#xf2cb';
+            temp.style.color = '#fff'               
+            
+            setTimeout(() =>{
+                temp.innerHTML = '&#xf2ca'
+                temp.style.color = '#E1BC29'
+            }, 1000);
+
+            setTimeout(() =>{
+                temp.innerHTML = '&#xf2c9'
+                temp.style.color = '#023C40'
+            }, 2000);
+
+            setTimeout(() =>{
+                temp.innerHTML = '&#xf2c8'
+                temp.style.color = '#AF3B6E'
+            }, 3000);
+
+            setTimeout(() =>{
+                temp.innerHTML = '&#xf2c7'
+                temp.style.color = '#BB0A21'
+            }, 4000);
+
+        
+        }            
+        
+        thermometer()
+
+        setInterval(thermometer, 5000);
+
+
+
+    </script>
+
+</body>
+</html>
