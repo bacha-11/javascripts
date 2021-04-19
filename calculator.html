@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div>
+        <form onsubmit="calculator(); return false">
+            <label>Calculator</label>
+
+            <input type="number" id="calNum">
+            <select name="opt" id="opt">
+                <option value="cal">cal</option>
+                <option value="feh">feh</option>
+            </select><br>
+
+            <input type="submit">
+        </form><br>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script>
+        function calculator(){
+            let calNum = document.getElementById('calNum').value;
+            let diff_opt = document.getElementById('opt');
+            let val = opt.options[diff_opt.selectedIndex].value
+            // console.log(val)
+            // console.log(calNum)
+
+            function celTofeh(cel){
+                let feht = Math.round((cel * 9/5) + 32);
+                return feht;
+            }
+
+            if(val == 'cal'){
+                let result = celTofeh(calNum)
+                document.getElementById('result').innerHTML = result
+            }
+
+            if(val == 'feh'){
+                let result = Math.round(( calNum - 32) * 9/5)
+                document.getElementById('result').innerHTML = result
+            }
+        }
+        
+    </script>
+</body>
+</html>
