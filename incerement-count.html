@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>Counter</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main-container{
+            width: 100%;
+            height: 100vh;
+            color: #f39c12;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            font-size: 20px;
+            background-color: #34495e;
+        }
+
+        .main-container > div i{
+            color: white;
+
+        }
+
+        .main-container p{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 200%;
+        }
+
+        .main-container div span{
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+<div class="main-container">
+    <div class="content">
+        <i class="fas fa-mug-hot fa-3x"></i>
+        <p class="counter" data-target="5000"></p>
+        <span>Complete Projects</span>
+    </div>
+
+    <div class="content">
+        <i class="fas fa-users fa-3x"></i>
+        <p class="counter" data-target="1500"></p>
+        <span>Total Customers</span>
+    </div>
+
+    <div class="content">
+        <i class="fas fa-tasks fa-3x"></i>
+        <p class="counter" data-target="500"></p>
+        <span>Ongoing Projects</span>
+    </div>
+    
+</div>
+
+    <script>
+        let counters = document.querySelectorAll('.counter');
+
+        counters.forEach(counter => {
+             
+        
+            // console.log(counter);
+            counter.innerHTML = '0'
+
+            function counterFunction(){
+                let countStart = +counter.innerHTML;
+
+                let targetCounter = +counter.getAttribute('data-target');
+                console.log(targetCounter);
+                let counterDiff = targetCounter / 100;
+
+                if (countStart < targetCounter){
+                    counter.innerHTML = ` ${countStart + counterDiff}`;
+                    setTimeout(counterFunction, 10);
+                }else{
+                    counter.innerHTML = targetCounter
+                }
+                
+            }
+
+            counterFunction()
+        }); 
+    </script>
+</body>
+</html>
