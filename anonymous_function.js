@@ -46,6 +46,17 @@ function quack(num){
 quack(3)
 
 
+// lexical scope
 
+var justAVar = "Oh, don't you worry about it, I'm GLOBAL"; // Here we have a global
+                                                          // variable called justAVar.
+function whereAreYou() {
+    var justAVar = "Just an every day LOCAL"; // And this function defines
+                                             // a new lexical scope...
+    return justAVar;
+}
+
+var result = whereAreYou();
+console.log(result);
 
 
