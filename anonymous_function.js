@@ -8,9 +8,13 @@ function handler(){
 global.onload = handler;
 
 
-// Anonymous function
+// Anonymous functions
 
 global.onload = function(){console.log('Hi there')}
+
+
+// Anonymous functions with settimeout
+setTimeout(() => {console.log("Time to take the cookies out of the oven")}, 2000);
 
 
 
